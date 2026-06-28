@@ -2,6 +2,12 @@
 
 Python/PySide6 기반 SEM-CL HDF5 mapping 및 spectrum 분석 프로그램의 초기 실행 버전입니다.
 
+## 처음 사용하는 분
+
+GitHub와 VS Code가 익숙하지 않다면 아래 안내서를 순서대로 따라 하세요.
+
+**[VS Code로 GitHub에서 내려받아 실행하는 방법](VS_CODE_USER_GUIDE.md)**
+
 ## 현재 구현된 기능
 
 - 여러 HDF5 파일 불러오기 및 drag & drop
