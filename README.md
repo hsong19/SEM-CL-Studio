@@ -8,6 +8,8 @@ GitHub와 VS Code가 익숙하지 않다면 아래 안내서를 순서대로 따
 
 **[VS Code로 GitHub에서 내려받아 실행하는 방법](VS_CODE_USER_GUIDE.md)**
 
+저장소를 VS Code로 Clone한 뒤 권장 확장을 설치하면 `F5`로 바로 실행할 수 있습니다.
+
 ## 현재 구현된 기능
 
 - 여러 HDF5 파일 불러오기 및 drag & drop

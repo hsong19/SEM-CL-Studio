@@ -46,12 +46,18 @@ https://github.com/hsong19/SEM-CL-Studio.git
    - `SEM-CL-Studio` 폴더는 VS Code가 자동으로 만듭니다.
 6. 다운로드가 끝나면 오른쪽 아래 또는 위쪽에 나타나는 `Open`을 누릅니다.
 7. `Do you trust the authors of the files in this folder?`가 나오면 저장소 주소를 확인하고 `Yes, I trust the authors`를 누릅니다.
+8. 오른쪽 아래에 권장 확장 설치 안내가 나타나면 `Install` 또는 `Install All`을 누릅니다.
 
 ## 3. 실행 환경 준비하기
 
-1. VS Code 상단 메뉴에서 `Terminal` → `New Terminal`을 누릅니다.
-2. 터미널 경로 끝이 `SEM-CL-Studio`인지 확인합니다.
-3. 다음 명령을 입력합니다.
+프로젝트에 VS Code 작업 설정이 포함되어 있으므로 명령을 직접 입력하지 않아도 됩니다.
+
+1. `Ctrl + Shift + P`를 누릅니다.
+2. `Tasks: Run Task`를 입력하고 선택합니다.
+3. `SEM-CL: Setup`을 선택합니다.
+4. 아래쪽 터미널에 작업 완료 메시지가 나올 때까지 기다립니다.
+
+또는 VS Code 터미널에서 다음 명령을 직접 실행해도 됩니다.
 
 ```powershell
 uv sync
@@ -61,7 +67,19 @@ uv sync
 
 ## 4. SEM-CL Studio 실행하기
 
-같은 VS Code 터미널에서 다음 명령을 실행합니다.
+가장 쉬운 실행 방법은 키보드에서 `F5`를 누르는 것입니다.
+
+1. `F5`를 누릅니다.
+2. 실행 구성을 묻는 경우 `SEM-CL Studio`를 선택합니다.
+3. VS Code가 필요한 환경을 확인한 뒤 프로그램 창을 엽니다.
+
+디버깅 없이 실행하려면 다음 방법도 사용할 수 있습니다.
+
+1. `Ctrl + Shift + P`를 누릅니다.
+2. `Tasks: Run Task`를 선택합니다.
+3. `SEM-CL: Run`을 선택합니다.
+
+또는 터미널에서 다음 명령을 실행합니다.
 
 ```powershell
 uv run semcl-studio
@@ -133,7 +151,9 @@ Ctrl+Shift+P
 → Git: Clone
 → GitHub 주소 붙여넣기
 → Open
-→ Terminal > New Terminal
-→ uv sync
-→ uv run semcl-studio
+→ 권장 확장 Install All
+→ Ctrl+Shift+P
+→ Tasks: Run Task
+→ SEM-CL: Setup
+→ F5
 ```

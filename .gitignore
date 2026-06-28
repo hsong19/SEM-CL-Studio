@@ -11,5 +11,6 @@ _qa_*.png
 
 # Local SEM-CL measurement data
 data/
+data.zip
 *.h5
 *.hdf5
