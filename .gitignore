@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mplconfig/
+build/
+dist/
+*.spec
+ui-smoke-*.png
+_qa_*.png
+
+# Local SEM-CL measurement data
+data/
+*.h5
+*.hdf5

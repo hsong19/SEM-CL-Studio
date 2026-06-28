@@ -1,0 +1,32 @@
+[project]
+name = "semcl-studio"
+version = "0.1.0"
+description = "Interactive SEM-CL HDF5 mapping and spectrum analysis desktop application"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "h5py>=3.11",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "PySide6>=6.7",
+    "pyqtgraph>=0.13.7",
+    "scipy>=1.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+semcl-studio = "semcl_studio.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/semcl_studio"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
